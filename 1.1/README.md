@@ -8,7 +8,7 @@
 * Любые вопросы по решению задач задавайте в чате Slack (ссылку вы найдете в письме на вашей эл. почте).
 
 ## Основное задание:
-На базе материала лекции запустить проект с программно заданным UITabBarController, привычными вам FeedViewController, ProfileViewController, PostViewController и их subviews, для чего: 
+На базе материала лекции запустить проект с программно созданным UITabBarController, привычными вам FeedViewController, ProfileViewController, PostViewController и их subviews, для чего: 
 1. Выставить iOS Deployment Target 12.0  
 2. Удалить из проекта SceneDelegate, параллельно надо кое-что поправить в .plist и методы жизненного цикла прописать в AppDelegate
 3. Обработку логики старта приложения перенести в AppDelegate: определить window, инициализировать рутовые контроллеры у стеков UINavigationControllerов, добавить стеки к UITabBarController, наконец, объявить window key and visible
