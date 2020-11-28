@@ -18,5 +18,5 @@
 
 ## Задача 2:
 1. Пропишите 'print' в каждом методе жизненного цикла приложения
-2. Воспроизведите замер времени работы в BackgroundMode по материалу RW, ссылку на который вы найдете в лекции 
+2. Воспроизведите замер времени работы в BackgroundMode [по материалу RW](https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started)
 3. Запишите это время в комментариях, в методе [applicationDidEnterBackground](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground)
