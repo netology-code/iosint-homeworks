@@ -5,22 +5,22 @@
 
 ### Домашние задания:
 
-[1. 	Структура проекта и жизненный цикл приложения, работа в фоне](https://github.com/netology-code/iosint-homeworks/tree/main/1.1)
+[1. Структура проекта и жизненный цикл приложения](https://github.com/netology-code/iosint-homeworks/blob/main/1/README.md)
 
-[2. 	Менеджеры зависимостей. Cocoapods и Swift Package Manager](https://github.com/netology-code/iosint-homeworks/tree/main/1.2)
+[2.	Менеджеры зависимостей. Cocoapods и Swift Package Manager](https://github.com/netology-code/iosint-homeworks/blob/main/2/README.md)
 
-[3. 	Паттерны и архитектура мобильных приложений](https://github.com/netology-code/iosint-homeworks/tree/main/1.3)
+[3.	Паттерны и архитектура мобильных приложений](https://github.com/netology-code/iosint-homeworks/blob/main/3/README.md)
 
-[4. 	MVP-координаторы и сборщики зависимостей](https://github.com/netology-code/iosint-homeworks/tree/main/1.4)
+[4.	MVP-координаторы и сборщики зависимостей](https://github.com/netology-code/iosint-homeworks/blob/main/4/README.md)
 
-[5 	Асинхронная разработка. Многопоточность. Operation и operation queue. Dispatch work item](https://github.com/netology-code/iosint-homeworks/tree/main/2.1)
+[5.	Асинхронная разработка. Многопоточность. Operation и operation queue. Dispatch work item](https://github.com/netology-code/iosint-homeworks/blob/main/5/README.md)
 
-[6. 	Grand Central Dispatch](https://github.com/netology-code/iosint-homeworks/tree/main/2.2)
+[6.	Operation, OperationQueue, GCD](https://github.com/netology-code/iosint-homeworks/blob/main/6/README.md)
 
-[7. 	Потоки и Run Loop, таймеры](https://github.com/netology-code/iosint-homeworks/tree/main/2.3)
+[7.	Потоки, Run Loop, таймеры](https://github.com/netology-code/iosint-homeworks/blob/main/7/README.md)
 
-[8. 	Поиск и исправление ошибок приложения. Отладка - рефакторинг](https://github.com/netology-code/iosint-homeworks/tree/main/2.4)
+[8.	Собственные домены ошибок. Управление ошибками приложения](https://github.com/netology-code/iosint-homeworks/blob/main/8/README.md)
 
-[9. 	Дебаггинг и Instruments](https://github.com/netology-code/iosint-homeworks/tree/main/2.5)
+[9.	xCode debugging (отладка). Instruments](https://github.com/netology-code/iosint-homeworks/blob/main/9/README.md)
 
-[10. 	Мультимедиа](https://github.com/netology-code/iosint-homeworks/tree/main/2.6)
+[10.	Мультимедиа](https://github.com/netology-code/iosint-homeworks/blob/main/10/README.md)
