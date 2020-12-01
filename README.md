@@ -1,6 +1,9 @@
 # Домашние задания по курсу «Разработка iOS-приложений — интерфейс пользователя»
 
+### Изучить перед домашними заданиями:
 [Инструкция по использованию Pull Request для сдачи дз](https://github.com/netology-code/iosint-homeworks/blob/main/Pull%20request's%20guideline.md)
+
+### Домашние задания:
 
 [1. 	Структура проекта и жизненный цикл приложения, работа в фоне](https://github.com/netology-code/iosint-homeworks/tree/main/1.1)
 
