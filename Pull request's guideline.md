@@ -19,6 +19,7 @@
 * В hotfix ветках делаются правки уже готовой функциональности. 
 
 [Подробнее о ветвлениях](https://nvie.com/posts/a-successful-git-branching-model)
+
 [Подробнее о git flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
 
 **Как это использовать для домашних заданий?**
