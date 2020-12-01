@@ -1,4 +1,4 @@
-## Pull Request
+## Pull requests' guideline
 
 **Мы переходим на сдачу домашних заданий через Pull request, начиная с курса IOSINT (Промышленная разработка).**
 
