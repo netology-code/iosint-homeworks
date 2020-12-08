@@ -33,4 +33,31 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
     }
 ```
 
+## Задача 2: 
 
+Оптимально сделать: 
+* на базе версии домашнего задания UI, где в `FeedViewController` у вас есть 2 кнопки
+* в новом проекте с `UITabBarController`, где повторяется навигация домашнего задания из блока UI с `FeedViewController` -> `PostViewController`
+ 
+Кнопки выполняют задачи: 
+1. создание нового PostViewController
+2. отображение (навигация - push) нового PostViewController
+
+Задание: 
+* Вынести кнопки из контроллера в отдельный дочерний файл/класс `UIView / UIStackView`, возможна разная реализация, в дальнейшем назовем `ContainerView`
+* Реализовать action-методы (`@objc private func() {}`) кнопок в этом классе
+* Каждый action-метод будет вызывать замыкание `onTap: (() -> Void)?`. Название произвольное - обычно применяются `onAction, onSelect, onTap...`
+Единственным самодельным элементом интерфейса `ContainerView` будет это замыкание. Имеется в виду, что остальной интерфейс штатный, наследуется от родителя.
+* Определить замыкание `onTap` надо в контроллере `FeedViewController`, когда будете определять/конфигурировать `ContainerView`. В замыкании будет только вызов единственного метода свойства `output` (тип `FeedViewOutput`). 
+* Создаем свойство `output` у контроллера `FeedViewController` - оно будет протокольного типа `FeedViewOutput`. 
+* Инъекция зависимости `FeedViewController` от `FeedViewOutput` происходит через инициализатор.
+* У вашего протокола `FeedViewOutput` будет 1 метод `showPost()` (название на ваш вкус), в котором нужно инициализировать `PostViewController`. А также 1 свойство `var navigationController: UINavigationController? { get set }`
+* Класс `PostPresenter`, реализуя протокол `FeedViewOutput`, создает `PostViewController`, а далее использует протокольное свойство `navigationController`, чтобы презентовать `PostViewController`. Чтобы `PostPresenter` мог использовать свойство `navigationController` от `FeedViewController`, нужно создать передать `navigationController` от `FeedViewController` -> `PostPresenter`. Например, в `viewDidLoad()` контроллера.
+* Доступ к `FeedViewController` и `PostPresenter` возможен через `SceneDelegate`, как в первой задаче. 
+
+Откуда у `FeedViewController` свойство `navigationController`? В `storyboard`, когда вы создавали `FeedViewController`, он "обернут" (Embed in...) в `UINavigationController`, стек рабочий, поэтому у `FeedViewController` свойство `navigationController` не `nil`. Его метод `.push` можно применять. 
+
+*Какие альтернативы есть для построения навигации не через `SceneDelegate`?* 
+* Создать файл / класс / протокол `AppCoordinator`
+* инициализировать экземпляр `AppCoordinator` в `SceneDelegate`
+* последний пункт задачи: "Доступ к `FeedViewController` и `PostPresenter` возможен через... - реализовать в координаторе
