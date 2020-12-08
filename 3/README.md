@@ -55,7 +55,10 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 * Класс `PostPresenter`, реализуя протокол `FeedViewOutput`, создает `PostViewController`, а далее использует протокольное свойство `navigationController`, чтобы презентовать `PostViewController`. Чтобы `PostPresenter` мог использовать свойство `navigationController` от `FeedViewController`, нужно создать передать `navigationController` от `FeedViewController` -> `PostPresenter`. Например, в `viewDidLoad()` контроллера.
 * Доступ к `FeedViewController` и `PostPresenter` возможен через `SceneDelegate`, как в первой задаче. Главный нюанс в том, что `FeedViewController` нужно инициализировать программно, и инжектить экземпляр презентера при инициализации контроллера. 
 
-Откуда у `FeedViewController` свойство `navigationController`? В `storyboard`, когда вы создавали `FeedViewController`, он "обернут" (Embed in...) в `UINavigationController`, стек рабочий, поэтому у `FeedViewController` свойство `navigationController` не `nil`. Его метод `.push` можно применять. 
+Откуда у `FeedViewController` свойство `navigationController`? Например, в `storyboard`, когда вы создавали `FeedViewController`, он "обернут" (Embed in...) в `UINavigationController`, поэтому у `FeedViewController` свойство `navigationController` не `nil`. Его метод `.push` можно применять. 
+Когда вы создаете первоначальный стек `UITabBarController` программно, в качестве `child` контроллеров вы используете `UINavigationController`. 
+`UITabBarController` -> `UINavigationController` -> `.rootViewController: FeedViewController` 
+У `FeedViewController` появится рабочее свойство `navigationController?` 
 
 *Какие альтернативы есть для построения навигации не через `SceneDelegate`?* 
 * Создать файл / класс / протокол `AppCoordinator`
