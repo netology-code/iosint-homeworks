@@ -56,6 +56,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 * Доступ к `FeedViewController` и `PostPresenter` возможен через `SceneDelegate`, как в первой задаче. Главный нюанс в том, что `FeedViewController` нужно инициализировать программно, и инжектить экземпляр презентера при инициализации контроллера. 
 
 Откуда у `FeedViewController` свойство `navigationController`? Например, в `storyboard`, когда вы создавали `FeedViewController`, он "обернут" (Embed in...) в `UINavigationController`, поэтому у `FeedViewController` свойство `navigationController` не `nil`. Его метод `.push` можно применять. 
+
 Когда вы создаете первоначальный стек `UITabBarController` программно, в качестве `child` контроллеров вы используете `UINavigationController`. 
 `UITabBarController` -> `UINavigationController` -> `.rootViewController: FeedViewController` 
 У `FeedViewController` появится рабочее свойство `navigationController?` 
