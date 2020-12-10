@@ -11,7 +11,7 @@
 
 [3.	Паттерны и архитектура мобильных приложений](https://github.com/netology-code/iosint-homeworks/blob/main/3/README.md)
 
-[4.	MVP-координаторы и сборщики зависимостей](https://github.com/netology-code/iosint-homeworks/blob/main/4/README.md)
+[4.	MVVM. Координаторы](https://github.com/netology-code/iosint-homeworks/blob/main/4/README.md)
 
 [5.	Асинхронная разработка. Многопоточность. Operation и operation queue. Dispatch work item](https://github.com/netology-code/iosint-homeworks/blob/main/5/README.md)
 
