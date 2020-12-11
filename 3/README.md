@@ -52,8 +52,8 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 * Создаем свойство `output` у контроллера `FeedViewController` - оно будет протокольного типа `FeedViewOutput`. 
 * Инъекция зависимости `FeedViewController` от `FeedViewOutput` происходит через инициализатор.
 * У вашего протокола `FeedViewOutput` будет 1 метод `showPost()` (название на ваш вкус), в котором нужно инициализировать `PostViewController`. А также 1 свойство `var navigationController: UINavigationController? { get set }`
-* Класс `PostPresenter`, реализуя протокол `FeedViewOutput`, создает `PostViewController`, а далее использует протокольное свойство `navigationController`, чтобы презентовать `PostViewController`. Чтобы `PostPresenter` мог использовать свойство `navigationController` от `FeedViewController`, нужно создать передать `navigationController` от `FeedViewController` -> `PostPresenter`. Например, в `viewDidLoad()` контроллера.
-* Доступ к `FeedViewController` и `PostPresenter` возможен через `SceneDelegate`, как в первой задаче. Главный нюанс в том, что `FeedViewController` нужно инициализировать программно, и инжектить экземпляр презентера при инициализации контроллера. 
+* Класс `PostPresenter`, реализуя протокол `FeedViewOutput`, создает `PostViewController`, а далее использует протокольное свойство `navigationController`, чтобы презентовать `PostViewController`. Чтобы `PostPresenter` мог использовать свойство `navigationController` от `FeedViewController`, нужно передать `navigationController` от `FeedViewController` -> `PostPresenter`. Например, в `viewDidLoad()` контроллера.
+* Доступ к `FeedViewController` и `PostPresenter` возможен через `SceneDelegate`, как в первой задаче. Главный нюанс в том, что `FeedViewController` нужно инициализировать программно, и инжектить экземпляр презентера при инициализации контроллера или через свойство. 
 
 Откуда у `FeedViewController` свойство `navigationController`? Например, в `storyboard`, когда вы создавали `FeedViewController`, он "обернут" (Embed in...) в `UINavigationController`, поэтому у `FeedViewController` свойство `navigationController` не `nil`. Его метод `.push` можно применять. 
 
