@@ -19,6 +19,8 @@ let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
 
 task.resume()
 
+* НИ В КОЕМ СЛУЧАЕ НЕ ИСПОЛЬЗУЙТЕ FORCE UNWRAP *
+
 https://stackoverflow.com/questions/24016142/how-do-i-make-an-http-request-in-swift
 
 2) Другой случай, ежели у вас такого проекта нет. Тогда задание будет состоять в том, что вы с помощью запроса - https://jsonplaceholder.typicode.com/photos забераете фотографии(они там хранятся как урлы) а дальше 2 опции
