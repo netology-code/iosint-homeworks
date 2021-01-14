@@ -46,7 +46,7 @@ https://stackoverflow.com/questions/24016142/how-do-i-make-an-http-request-in-sw
 3) Если вас не устраивает ни одна из опций выше, то загрузите к себе в проект (в xcassets) любые 5-10 картинок. А потом просто создайте коллекцию, в которую вы будете их выводить. Только перед этим наложите на них фильтр. Любой, например [сепия](https://developer.apple.com/documentation/coreimage/processing_an_image_using_built-in_filters)
 
 <details>
-<summary>Подсказка
+<summary>Подсказка</summary>
 Это сделано здесь https://habr.com/ru/post/320152/
 
 </details>
