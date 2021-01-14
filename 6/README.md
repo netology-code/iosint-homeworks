@@ -19,7 +19,7 @@ let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
 
 task.resume()
 
-* НИ В КОЕМ СЛУЧАЕ НЕ ИСПОЛЬЗУЙТЕ FORCE UNWRAP *
+ НИ В КОЕМ СЛУЧАЕ НЕ ИСПОЛЬЗУЙТЕ FORCE UNWRAP 
 
 https://stackoverflow.com/questions/24016142/how-do-i-make-an-http-request-in-swift
 
