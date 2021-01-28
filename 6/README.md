@@ -36,7 +36,7 @@
 https://stackoverflow.com/questions/24016142/how-do-i-make-an-http-request-in-swift
 
 ### Вариант 2
-Если у вас нет такого проекта, то задание будет состоять в том, что вы с помощью [запроса](https://jsonplaceholder.typicode.com/photos) забираете JSON с сревера, вот такого вида
+Если у вас нет такого проекта, то задание будет состоять в том, что вы с помощью [запроса](https://jsonplaceholder.typicode.com/photos) забираете JSON с сервера, вот такого вида:
 [
   {
     "albumId": 1,
@@ -47,7 +47,7 @@ https://stackoverflow.com/questions/24016142/how-do-i-make-an-http-request-in-sw
   }
   ........
   ]
- Это, по сути представляет из себя массив элементов - 
+ Это, по сути представляет из себя массив элементов:
  {
     "albumId": 1,
     "id": 1,
@@ -56,9 +56,9 @@ https://stackoverflow.com/questions/24016142/how-do-i-make-an-http-request-in-sw
     "thumbnailUrl": "https://via.placeholder.com/150/92c952"
   },
   
-  Здесь есть поле url. По этому полю вы без труда сможете загрузить картинку (это тоже надо делать асинхронно)
+  Здесь есть поле url. По этому полю вы без труда сможете загрузить картинку (это тоже надо делать асинхронно):
  <details>
-<summary>Интрукция как скачивать картинку</summary>
+<summary>Инcтрукция как скачивать картинку</summary>
 /// забираете данные из сети по URL
 func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
     URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
