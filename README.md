@@ -21,6 +21,6 @@
 
 [8.	Собственные домены ошибок. Управление ошибками приложения](https://github.com/netology-code/iosint-homeworks/blob/main/8/README.md)
 
-[9.	xCode debugging (отладка). Instruments](https://github.com/netology-code/iosint-homeworks/blob/main/9/README.md)
+[9.	Xcode debugging (отладка). Instruments](https://github.com/netology-code/iosint-homeworks/blob/main/9/README.md)
 
 [10.	Мультимедиа](https://github.com/netology-code/iosint-homeworks/blob/main/10/README.md)
