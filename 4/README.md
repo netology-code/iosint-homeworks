@@ -38,7 +38,6 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 ## Задача 2: 
 
 1. Создайте `protocol LoginFactory` с 1 методом без параметров, который возвращает `LoginInspector`
-2. Вынесите генерацию `LoginInspector` из `SceneDelegate (или AppDelegate)` в фабрику  
-3. Создайте объект `MyLoginFactory` (название на ваше усмотрение), подпишите на протокол
-4. Инициализируйте в `SceneDelegate / AppDelegate` только фабрику 
-5. Внедрите зависимость контроллера от `LoginInspector`, создав инспектора с помощью фабричного метода
+2. Вынесите генерацию `LoginInspector` из `SceneDelegate (или AppDelegate)` в фабрику: создайте объект `MyLoginFactory` (название на ваше усмотрение), подпишите на протокол
+3. Инициализируйте в `SceneDelegate / AppDelegate` только фабрику 
+4. Внедрите зависимость контроллера от `LoginInspector`, создав инспектора с помощью фабричного метода
