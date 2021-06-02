@@ -11,7 +11,7 @@
 ## Задача 1
 
 1. Добавьте зависимость [SnapKit](https://github.com/SnapKit/SnapKit) через Cocoapods. Используйте последнюю версию библиотеки.
-2. Перепишите вёрстку класса `ProfileView` при помощи SnapKit.
+2. Перепишите вёрстку класса `ProfileHeaderView` при помощи SnapKit.
 
 ## Задача 2
 
