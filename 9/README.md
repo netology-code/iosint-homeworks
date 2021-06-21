@@ -16,4 +16,4 @@
 
 3. Во время подбора пароля, рядом с полем password должен работать <code>activityIndicator</code>, любые действия с UI не должны блокироваться. Для этого вы должны осуществлять подбор пароля не в главном потоке, используя Operation или GCD.  
 
-4. По окончании подбора нужно вывести пароль в поле password, сделав его <code>isSecureTextEntry = false</code>, остановить работу <code>activityIndicator</code> и его скрыть. 
+4. По окончании подбора нужно вывести пароль в поле password, сделав его <code>isSecureTextEntry = false</code>, остановить работу <code>activityIndicator</code> и  скрыть его. 
