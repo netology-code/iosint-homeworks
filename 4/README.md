@@ -18,8 +18,8 @@
 Дополнительная задача * (со звездочкой, необязательная) 
 Можно проверять не значения свойств напрямую, а сгенерированный hash. Для этого достаточно вызвать у строки библиотечный метод Swift* `МояСтрока.hash` Проверка хэша - необязательное условие, ДЗ будет принято, как обычно, если будет проверяться plain String. 
 
-3. Для `LoginViewController` прописываем протокол делегата `LoginViewControllerDelegate`. Метод делегата проверяет значения, введенные в 2 `UITextField` контроллера. Напрямую вызывать из контроллера сервис `Checker` нельзя! 
-4. Создаем произвольный класс/структуру `LoginInspector` (или придумайте свое название), который подписывается на протокол `LoginViewControllerDelegate`, реализуем в нем протокольный метод. 
+3. Для `LoginViewController` прописываем протокол `LoginInspectorProtocol`. Метод делегата проверяет значения, введенные в 2 `UITextField` контроллера. Напрямую вызывать из контроллера сервис `Checker` нельзя! 
+4. Создаем произвольный класс/структуру `LoginInspector` (или придумайте свое название), который подписывается на протокол `LoginInspectorProtocol`, реализуем в нем протокольный метод. 
 5. `LoginInspector` проверяет точность введенного пароля с помощью синглтона `Checker`. 
 6. Важный момент: чтобы делегат мог сообщить контроллеру результат проверки логина и пароля, методы протокола делегата будут содержать возвращаемое значение
 7. Внедрите зависимость контроллера от `LoginInspector`, то есть присвойте значение свойству делегата в `SceneDelegate` или `AppDelegate`
@@ -34,7 +34,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
         // инициализация LoginInspector
         
         if let tabController = window?.rootViewController as? UITabBarController, let loginNavigation = tabController.viewControllers?.last as? UINavigationController, let loginController = loginNavigation.viewControllers.first as? LogInViewController {
-            loginController.delegate = // экземпляр LoginInspector
+            loginController.loginInspector = // экземпляр LoginInspector
         }
     }
 ```
